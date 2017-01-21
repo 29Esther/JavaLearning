@@ -35,11 +35,11 @@ public class TypeTransfer {
     //short c2 = a2 * b2; // 会报错，不兼容类型，会遗失精度
     
     public static void main (String[] args) {
-        /*System.out.println(10/3); // 3 (int)
+        System.out.println(10/3); // 3 (int)
         System.out.println(10.0/3); // 3.3333333333333335 (double)
         System.out.println(10.0/3.0); // 3.3333333333333335 (double)
         
-        System.out.println(0b01111111_111111111_11111111_11111111 + 1); // 0 */
+        System.out.println(0b01111111_11111111_11111111_11111111 + 1); // 0 
         
         int count1 = 2147483647;
         System.out.println(count1); // 2147483647
