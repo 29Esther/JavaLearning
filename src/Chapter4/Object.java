@@ -1,5 +1,8 @@
 package Chapter4;
 
+import java.math.BigDecimal;
+import java.util.Scanner;
+
 /**
  * 1. 类和对象
  * 2. 标准类
@@ -21,10 +24,30 @@ class Clothes {
 }
 
 /**
- * 介绍两个标准类：
+ * 介绍两个标准类：Scanner, 
  */
 public class Object {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        int number = scanner.nextInt();
+        System.out.println(number);
+        
+        BigDecimal a = new BigDecimal("0.3");
+        BigDecimal b = new BigDecimal("0.3");
+        BigDecimal c = a;
+        BigDecimal summary = a.add(b).add(c);
+        System.out.println(summary);
+        System.out.println(summary.equals("0.9")); // false
+        System.out.println(summary.equals(0.9)); // false
+        System.out.println(summary.equals(new BigDecimal("0.9"))); // true
+        /*
+         * | 对象    | = 的作用             | == 的作用                   |
+         * |--------|---------------------|---------------------------|
+         * | 基本类型 | 赋值                 | 比较两个变量存储的值是否相同    |
+         * | 操作对象 | 指定参考名称参考某个对象 | 比较两个参考名称是否参考同一对象 |
+         * |        |                     |                           |
+         */
+        System.out.println(a == b); // false
+        System.out.println(a == c); // true
     }
 }
