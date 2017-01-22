@@ -1,4 +1,4 @@
-package Chapter4;
+package chapter4;
 
 import java.math.BigDecimal;
 import java.util.Scanner;
