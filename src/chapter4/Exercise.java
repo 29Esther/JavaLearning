@@ -32,7 +32,7 @@ public class Exercise {
 	}
 	
 	/*
-	 * 1. input: number of 费式数
+	 * A. input: number of 费式数
 	 *    output: number个费式数组
 	 */
 	private static int[] finbonacci(int number) {
@@ -49,7 +49,7 @@ public class Exercise {
 	}
 	
 	/*
-	 * 2. 洗牌
+	 * B. 洗牌
 	 */
 	private static String[] cardsReorder() {
 		String[] answer = new String[13*4];
@@ -96,7 +96,7 @@ public class Exercise {
 	}
 
 	/*
-	 * 3. 固定数组排序
+	 * C. 固定数组排序
 	 */
 	private static int[] sortArray(int[] numbers) {
 		int[] answer = Arrays.copyOf(numbers, numbers.length);
@@ -115,7 +115,7 @@ public class Exercise {
 	}
 	
 	/*
-	 * 4. 在固定数组中找到某值
+	 * D. 在固定数组中找到某值
 	 */
 	private static int findNumber(int[] numbers, int number) {
 		for (int i = 1; i < numbers.length; i ++) {
